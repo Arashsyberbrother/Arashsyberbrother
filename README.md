@@ -1,11 +1,11 @@
 <div align="center">
 
-<!-- Futuristic HUD Banner -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,24&height=220&section=header&text=ARASH%20M.%20REZAEI&fontSize=44&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=%E2%9A%A1%20AI%20%26%20Computer%20Vision%20Engineer%20%7C%20Deep%20Learning%20%26%20Edge%20AI&descAlignY=64&descSize=19&descColor=38bdf8" width="100%" alt="Header Banner" />
+<!-- Custom Designed Banner -->
+<img src="./assets/banner.png" width="100%" alt="Arash M.rezaii - Where Science Meets Code" />
 
 <!-- Dynamic Animated Typing Subtitle -->
 <a href="https://github.com/Arashsyberbrother">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&duration=2800&pause=1000&color=22D3EE&center=true&vCenter=true&width=750&lines=%3E_++Specializing+in+Real-Time+Computer+Vision+%26+Deep+Learning;%3E_++Architecting+Persian+ALPR+%2F+ANPR+%26+Vehicle+Tracking;%3E_++Ultralytics+YOLO11+%E2%80%A2+PyTorch+%E2%80%A2+OpenCV+%E2%80%A2+TensorRT;%3E_++Full-Stack+Surveillance+Dashboards+with+React+%26+TypeScript" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&duration=2800&pause=1000&color=22D3EE&center=true&vCenter=true&width=780&lines=%3E_++Where+Science+Meets+Code;%3E_++Nuclear+Engineering+%C3%97+AI+%C3%97+Software+Development;%3E_++Real-Time+Computer+Vision+%26+Deep+Learning+Specialist;%3E_++YOLO11+%E2%80%A2+PyTorch+%E2%80%A2+OpenCV+%E2%80%A2+React+%E2%80%A2+TypeScript" alt="Typing SVG" />
 </a>
 
 <br/><br/>
@@ -13,7 +13,7 @@
 <!-- Status & Metric Badges -->
 [![Profile Views](https://komarev.com/ghpvc/?username=Arashsyberbrother&style=for-the-badge&color=0284c7&label=PROFILE+VIEWS)](https://github.com/Arashsyberbrother)
 [![GitHub Followers](https://img.shields.io/github/followers/Arashsyberbrother?style=for-the-badge&color=3b82f6&label=FOLLOWERS)](https://github.com/Arashsyberbrother)
-[![Focus](https://img.shields.io/badge/FOCUS-COMPUTER%20VISION%20%26%20AI-00f0ff?style=for-the-badge)](https://github.com/Arashsyberbrother)
+[![Discipline](https://img.shields.io/badge/SCIENCE%20%C3%97%20CODE-Nuclear%20%7C%20AI-9333ea?style=for-the-badge)](https://github.com/Arashsyberbrother)
 [![Email](https://img.shields.io/badge/CONTACT-arashrezaii28%40gmail.com-ef4444?style=for-the-badge&logo=gmail&logoColor=white)](mailto:arashrezaii28@gmail.com)
 
 </div>
@@ -39,8 +39,12 @@
 
 ### 👨‍💻 Engineering Profile & Vision
 
-I am an **AI & Computer Vision Engineer** focused on engineering production-grade, low-latency vision pipelines and automated intelligence systems. My work spans deep neural networks for real-time detection, tracking, and optical character recognition (OCR), down to responsive command-center interfaces.
+> **"WHERE SCIENCE MEETS CODE"**  
+> Intersecting the rigorous principles of **Nuclear Engineering** with modern **Artificial Intelligence** and **High-Performance Software Development**.
 
+I build intelligent, production-grade vision pipelines and scientific computing workflows. My technical focus bridges deep neural networks for real-time detection, tracking, and optical character recognition (OCR) with responsive mission-critical dashboards.
+
+- ⚛️ **Scientific Foundation:** Nuclear Engineering analytical thinking applied to complex algorithmic modeling and simulation.
 - 🔭 **Active Work:** High-precision Persian License Plate Recognition (ALPR/ANPR) & Multi-Camera Vehicle Tracking.
 - 🧠 **Core Models:** Ultralytics YOLO11 / YOLOv8, Face Verification (DeepFace/LFFD), OpenCV pipelines, and custom CNNs.
 - ⚡ **Inference & Optimization:** CUDA acceleration, TensorRT, ONNX Runtime, and edge-device deployments.
