@@ -1,128 +1,139 @@
 <div align="center">
 
-<!-- Custom Academic Banner -->
-<img src="./assets/banner.png" width="100%" alt="Arash M.rezaii - Where Science Meets Code" />
+<!-- Academic Header Banner -->
+<img src="./assets/banner.png" width="100%" alt="Arash Mohammadrezaei - Computational Nuclear Engineering & Scientific Computing" />
 
 <br/><br/>
 
 # Arash Mohammadrezaei
-### **Undergraduate Researcher in Computer Vision & Deep Learning**
-**B.Sc. in Nuclear Engineering** • *Where Science Meets Computational Intelligence*
+### **Computational Nuclear Engineering & Scientific Computing**
+**B.Sc. in Nuclear Engineering** • *Reactor Physics • Stiff Numerical Methods • Scientific Machine Learning*
 
-[![Status: Seeking RA / Graduate Opportunities](https://img.shields.io/badge/Status-Seeking%20RA%20%2F%20Graduate%20Opportunities-0ea5e9?style=for-the-badge&logo=googlescholar&logoColor=white)](mailto:arashrezaii28@gmail.com)
-[![Email](https://img.shields.io/badge/Direct%20Email-arashrezaii28%40gmail.com-ea4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:arashrezaii28@gmail.com)
+[![Status: Seeking Graduate Opportunities](https://img.shields.io/badge/Status-Seeking%20M.Sc.%20%2F%20Ph.D.%20Opportunities-0ea5e9?style=for-the-badge&logo=googlescholar&logoColor=white)](mailto:arashrezaii28@gmail.com)
+[![Direct Email](https://img.shields.io/badge/Email-arashrezaii28%40gmail.com-ea4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:arashrezaii28@gmail.com)
+[![GitHub Profile](https://img.shields.io/badge/GitHub-Arashsyberbrother-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Arashsyberbrother)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Arash%20Mohammadrezaei-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com)
-[![Curriculum Vitae](https://img.shields.io/badge/Curriculum%20Vitae-Download%20CV-10b981?style=for-the-badge&logo=adobeacrobatreader&logoColor=white)](mailto:arashrezaii28@gmail.com)
 
 </div>
 
 ---
 
-## 🔬 Academic Summary & Research Interests
+## 🔬 Academic Profile & Research Positioning
 
-I am an engineering researcher working at the intersection of **Physics/Nuclear Engineering principles** and **Applied Artificial Intelligence**. My primary focus centers on high-throughput, low-latency deep learning pipelines, real-time computer vision systems, and scientific machine learning (SciML).
+I am an undergraduate researcher in **Nuclear Engineering** specializing in **computational reactor physics, stiff numerical time-integration, and scientific machine learning (SciML)**. 
 
-My technical work spans the complete lifecycle of computer vision systems: from custom dataset curation and neural network fine-tuning (YOLO11, custom CNNs, OCR engines) to low-latency edge deployment (TensorRT, ONNX, CUDA) and interactive real-time mission-control interfaces.
-
-### Core Research Areas
-- **Real-Time Computer Vision & Object Tracking:** Multi-stage object detection, vehicle localization, character segmentation, and DeepSORT/ByteTrack multi-object tracking.
-- **Edge AI & High-Throughput Inference:** Model quantization (INT8/FP16), TensorRT acceleration, asynchronous inference pipelines, and memory-constrained deployment on NVIDIA Jetson/RTX hardware.
-- **Optical Character Recognition (OCR) for Non-Latin Scripts:** Specialized segmentation, character classification, and heuristic plausibility filtering for Persian/Arabic typography.
-- **Scientific Computing & Physics-Informed ML:** Applying neural architectures and numerical simulation methods to physical and nuclear engineering systems.
-
----
-
-## 🏆 Featured Research Projects & Benchmarks
-
-### 1. [Persian ALPR & Real-Time Vehicle Surveillance Pipeline](https://github.com/Arashsyberbrother/yolo11-persian-license-plate-recognition)
-*End-to-End Automated License Plate Recognition & Telemetry System with Multi-Threaded Inference*
-
-- **Problem:** Accurate, real-time license plate detection and non-Latin character recognition under challenging illumination, severe viewing angles, and high-speed motion blur.
-- **Methodology:** A hierarchical two-stage pipeline combining vehicle localization (YOLO11n), plate detection, morphological deskewing (Hough Transform), and hybrid character classification with EasyOCR fallback bridges.
-- **My Contributions:** Architected the multi-threaded PySide6 analytics engine (`desktop_ui.py`), implemented OCR string plausibility filtering to eliminate false positives, built automated artifact logging, and conducted hardware latency benchmarks.
-
-#### Quantitative Experimental Benchmark
-
-| Pipeline Stage | Model Architecture | Input Resolution | Metric | RTX 3060 (FP16) | Jetson / Edge (Est.) | CPU (i7-12th) |
-| :--- | :--- | :---: | :---: | :---: | :---: | :---: |
-| **Vehicle & Plate Detection** | YOLO11n (Fine-tuned) | 640 × 640 | **mAP@0.5: 97.4%** | **8.4 ms** (~119 FPS) | **28.2 ms** (~35 FPS) | **42.1 ms** |
-| **Plate Deskewing & Seg.** | OpenCV Hough / Morph | Variable | **Success: 96.1%** | **2.1 ms** | **6.4 ms** | **4.8 ms** |
-| **Character Classification** | Custom CNN / Hybrid | 32 × 32 (x8) | **Acc: 98.6% (CER: 1.1%)** | **3.7 ms** | **11.2 ms** | **12.5 ms** |
-| **End-to-End Pipeline** | **Complete System** | **1080p Video** | **Overall Acc: 95.8%** | **14.2 ms (~70 FPS)** | **45.8 ms (~22 FPS)** | **59.4 ms** |
-
----
-
-### 2. [Edge Vision Mission Control & Geospatial Surveillance SOC](https://github.com/Arashsyberbrother/-arash)
-*Real-Time Security Operations Center with Live Multi-Feed Processing & GIS Tracking*
-
-- **Problem:** Managing asynchronous telemetry, high-framerate multi-camera video decoding, and spatial incident tracking without UI rendering bottlenecks.
-- **Architecture:** Engineered with **React 18, TypeScript, and Vite**, featuring non-blocking WebSocket state sync, GIS coordinate mapping, and automated alert dispatching.
-- **Capabilities:** Live camera matrix view, geospatial vehicle track visualization, bounding-box overlay rendering, and forensic event loggers.
-
----
-
-### 3. [DeepFace Biometric Recognition & Facial Feature Analysis](https://github.com/Arashsyberbrother/deepface-react-ui)
-*Lightweight Face Detection & Biometric Embeddings for Edge Security*
-
-- Integration of state-of-the-art face detectors (LFFD / RetinaFace) with facial representation embeddings (VGG-Face, ArcFace, Facenet) for identity verification under variable lighting conditions.
-- Interactive user interface for enrollment, similarity threshold tuning, and real-time biometric telemetry.
-
----
-
-## 🛠️ Technical Competencies & Tooling
+My work focuses on developing transparent, mathematically verified computational frameworks for physical and nuclear systems—bridging classical reactor physics theory (eigenvalue diffusion and point kinetics) with modern numerical analysis (implicit stiff solvers, order-of-accuracy verification) and scientific machine learning (physics-informed neural networks).
 
 ```
-  ┌────────────────────────────────────────────────────────────────────────────────────────┐
-  │                                    RESEARCH ARSENAL                                    │
-  ├──────────────────────┬──────────────────────────┬──────────────────────────────────────┤
-  │ DEEP LEARNING & CV   │ SCIENTIFIC COMPUTING     │ SYSTEMS, EDGE & FULL-STACK           │
-  ├──────────────────────┼──────────────────────────┼──────────────────────────────────────┤
-  │ • PyTorch / Torchvis │ • NumPy & SciPy          │ • Linux / Bash & Shell Scripting     │
-  │ • Ultralytics YOLO11 │ • Matplotlib & Seaborn   │ • Docker Containerization            │
-  │ • OpenCV 4.x         │ • Pandas Data Analytics  │ • Git & Version Control Best Practices│
-  │ • TensorRT / ONNX    │ • LaTeX Academic Writing │ • TypeScript, React 18, Vite         │
-  │ • DeepFace & LFFD    │ • Weights & Biases (WandB│ • REST APIs, WebSockets, WebRTC      │
-  └──────────────────────┴──────────────────────────┴──────────────────────────────────────┘
+┌────────────────────────────────────────────────────────────────────────────────────────┐
+│                        COMPUTATIONAL RESEARCH PORTFOLIO ARC                            │
+└────────────────────────────────────────────────────────────────────────────────────────┘
+  Project 1: Physics-Informed Neural Network Lab (Numerical & SciML Foundations)
+             └─ 1D transient heat equation, autograd vs. Crank-Nicolson FDM,
+                A-stability and non-L-stability analysis, empirical error norms
+                                           │
+                                           ▼
+  Project 2: 1D Neutron Diffusion Reactor Simulator (Steady-State Spatial Neutronics)
+             └─ One-group diffusion eigenvalue problem, conservative FDM, Thomas TDMA,
+                power iteration, heterogeneous core-reflector physics, reflector savings
+                                           │
+                                           ▼
+  Project 3: Reactor Point Kinetics & Transient Analysis (Time-Dependent Dynamics)
+             └─ 7-ODE PRKE, 6-group delayed precursors (Keepin U-235), bordered Jacobian,
+                stiff implicit solvers (BDF2, CN, Euler), exact Inhour analytical benchmark,
+                Prompt Jump Approximation asymptotic verification
+                                           │
+                                           ▼
+  Future:    Scientific Machine Learning for Coupled Reactor Dynamics
+             └─ Neural ODEs and operator learning for stiff, multi-scale transient physics
 ```
 
 ---
 
-## 🎓 Academic Background
+## 🏆 Featured Research Repositories
+
+### 1. [Reactor Point Kinetics & Transient Analysis](https://github.com/Arashsyberbrother/reactor-point-kinetics-transient-analysis)
+*Time-Dependent Reactor Kinetics with 6 Delayed-Neutron Groups & Stiff Implicit Solvers*
+
+- **Problem:** Integrating the stiff 7-ODE Point Reactor Kinetics Equations (PRKE) across disparity in time constants from prompt neutron lifetime ($\Lambda = 50\,\mu\text{s}$) to precursor half-lives ($T_{1/2} \approx 55.7\text{ s}$).
+- **Numerical Formulation:** Developed custom vector-matrix implicit solvers (BDF2, Crank-Nicolson, Backward Euler) with exact bordered-diagonal Jacobian $\mathbf{A}(t)$, alongside an adaptive 5th-order Radau IIA reference solver.
+- **Verification Standard:** Derived the exact 7-pole Inhour characteristic equation and Cauchy residue amplitude expansion ($\sum A_j = 1.0$) as a closed-form analytical benchmark for step reactivity insertions.
+- **Key Verified Findings:**
+  - Critical equilibrium null-transient preserved over $1000\text{ s}$ ($20,000$ steps) with relative drift $\le 3.95 \times 10^{-14}$.
+  - Verified theoretical order of accuracy ($p = 0.983$ Euler, $p = 2.000$ CN, $p = 1.976$ BDF2).
+  - Evaluated Prompt Jump Approximation as an asymptotic singular perturbation limit ($0.25\%$ discrepancy at $+0.20\$$).
+  - Characterized prompt-supercritical excursion ($+1.05\$$) with prompt timescale $\tau_{\text{prompt}} \approx 154\text{ ms}$.
+- **Tests & Quality:** 55 / 55 automated tests passing; comprehensive publication figures and CSV tables.
+
+---
+
+### 2. [1D Neutron Diffusion Reactor Simulator](https://github.com/Arashsyberbrother/neutron-diffusion-reactor-simulator)
+*Steady-State Reactor Physics, Finite-Difference Discretization & Reflector Savings*
+
+- **Problem:** Solving the steady-state, one-group neutron diffusion eigenvalue problem to determine core criticality ($k_{\text{eff}}$), spatial scalar flux ($\phi(x)$), and fission power ($P(x)$) for bare and reflected cores.
+- **Numerical Formulation:** Conservative cell-centered second-order finite difference discretization, harmonic mean interface diffusion coefficients, $\mathcal{O}(N)$ Thomas algorithm (TDMA), and power iteration.
+- **Verification Standard:** Exact analytical fundamental mode buckling benchmark for bare homogeneous slab ($k_{\text{eff}} = \nu\Sigma_f / (\Sigma_a + D B_g^2)$).
+- **Key Verified Findings:**
+  - Analytical benchmark agreement to within $0.44\text{ pcm}$ error ($|k_{\text{eff}} - k_{\text{exact}}| = 4.41 \times 10^{-6}$).
+  - Confirmed asymptotic spatial quadratic convergence ($p = 2.000, R^2 = 1.0000$) across $N \in [20, 640]$ grid cells.
+  - Demonstrated $+4641.1\text{ pcm}$ reactivity gain from reflector back-scattering and $22.0\%$ core power flattening.
+  - Solved critical fuel thickness ($T_{\text{crit}} = 24.9658\text{ cm}$) with residual $|k_{\text{eff}} - 1.0| = 0.13\text{ pcm}$.
+- **Tests & Quality:** 45 / 45 automated tests passing; 12 publication figures.
+
+---
+
+### 3. [Physics-Informed Neural Network Lab](https://github.com/Arashsyberbrother/physics-informed-neural-network-lab)
+*Scientific Machine Learning Foundations & Classical Crank-Nicolson Numerical Benchmarks*
+
+- **Problem:** Evaluating the fidelity, convergence, and computational trade-offs of Physics-Informed Neural Networks (PINNs) against exact analytical solutions and classical finite-difference methods for the 1D transient heat equation.
+- **Methodology:** Fully connected PyTorch MLP with hyperbolic tangent activations, Latin Hypercube spatio-temporal sampling, autograd differential PDE residuals, and an implicit 2nd-order Crank-Nicolson numerical baseline.
+- **Numerical & Rigor Insights:**
+  - Demonstrated why Crank-Nicolson is A-stable but strictly non-L-stable ($|R(-\infty)| = 1$), highlighting the mesh ratio monotonicity condition ($r = \alpha \Delta t / \Delta x^2 \le 1$).
+  - Evaluated PINN error fields ($L_\infty = 9.03 \times 10^{-3}$, relative $L_2 = 0.91\%$) against classical FDM ($L_\infty = 1.75 \times 10^{-5}$).
+  - Articulated the computational boundary: classical FDM solves in $\sim 18\text{ ms}$ vs. $\sim 265\text{ s}$ for PINN optimization on CPU, establishing when SciML is—and is not—appropriate.
+- **Tests & Quality:** 19 / 19 automated tests passing; automated convergence and checkpointing pipelines.
+
+---
+
+## 🎯 Research Interests
+
+- **Computational Reactor Physics:** Deterministic neutron transport and diffusion, eigenvalue algorithms (power iteration, Krylov methods), heterogeneous multi-region core modeling.
+- **Time-Dependent Reactor Dynamics:** Stiff kinetic equations, delayed-neutron multi-family kinetics, reactor control dynamics, reactivity accident analysis.
+- **Stiff Numerical Time-Integration:** A-stable and L-stable multi-step and implicit Runge-Kutta schemes (BDF2, TR-BDF2, Radau IIA), high-frequency oscillation damping, order verification.
+- **Scientific Machine Learning (SciML):** Physics-informed neural networks (PINNs), neural ODEs for physical dynamical systems, operator learning for parametric PDE acceleration.
+
+---
+
+## 🛠️ Technical Competencies
+
+```
+┌────────────────────────────────────────────────────────────────────────────────────────┐
+│                                   RESEARCH TOOLKIT                                     │
+├───────────────────────┬──────────────────────────┬─────────────────────────────────────┤
+│ REACTOR PHYSICS       │ NUMERICAL ANALYSIS       │ SCIENTIFIC COMPUTING & ML           │
+├───────────────────────┼──────────────────────────┼─────────────────────────────────────┤
+│ • 1D Neutron Diffusion│ • Stiff ODE Solvers      │ • Python (NumPy, SciPy, Matplotlib) │
+│ • Point Kinetics PRKE │   (BDF2, CN, Euler)      │ • PyTorch & Autograd / SciML        │
+│ • 6-Group Delayed Pre.│ • Radau IIA Reference    │ • Git & GitHub Collaborative Dev    │
+│ • Inhour Eigenvalues  │ • Finite Difference (FDM)│ • Automated Testing (Pytest)        │
+│ • Criticality & Power │ • Thomas Algorithm (TDMA)│ • LaTeX / Academic Documentation    │
+│ • Reflector Savings   │ • Convergence & Stability│ • Linux & Shell Scripting           │
+└───────────────────────┴──────────────────────────┴─────────────────────────────────────┘
+```
+
+---
+
+## 🎓 Education & Academic Background
 
 - **B.Sc. in Nuclear Engineering**
-  - Strong analytical foundation in advanced engineering mathematics, partial differential equations (PDEs), numerical methods, statistical physics, and radiation measurement.
-  - Applying analytical rigor and scientific problem-solving methods to modern machine learning challenges.
+  - **Core Coursework:** Nuclear Reactor Theory, Reactor Physics & Kinetics, Computational Methods in Nuclear Engineering, Engineering Mathematics, Partial Differential Equations (PDEs), Radiation Measurement & Shielding.
+  - **Research Focus:** Applying rigorous numerical analysis and scientific computing to time-dependent and spatial reactor physics problems.
 
 ---
 
-## 📈 Research & GitHub Activity
+## 📬 Contact & Academic Inquiries
 
-<div align="center">
-
-<img src="https://streak-stats.demolab.com/?user=Arashsyberbrother&theme=tokyonight&hide_border=true&card_width=500" alt="GitHub Streak" />
-
-<br/><br/>
-
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Arashsyberbrother&theme=tokyonight" alt="Profile Details" />
-&nbsp;
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Arashsyberbrother&theme=tokyonight" alt="Top Languages" />
-
-<br/><br/>
-
-#### Continuous Activity Grid (Automated Pipeline)
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Arashsyberbrother/Arashsyberbrother/output/github-contribution-grid-snake-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Arashsyberbrother/Arashsyberbrother/output/github-contribution-grid-snake.svg">
-  <img alt="GitHub Contribution Snake" src="https://raw.githubusercontent.com/Arashsyberbrother/Arashsyberbrother/output/github-contribution-grid-snake.svg" width="100%" />
-</picture>
-
-</div>
-
----
-
-## 📬 Academic & Professional Inquiries
-
-I am actively preparing applications for **Graduate Studies (M.Sc. / Ph.D.) and Research Assistantship (RA) opportunities** in Computer Vision, Deep Learning, and Intelligent Systems.
+I am actively seeking **M.Sc. / Ph.D. graduate positions and funded Research Assistantships (RA)** in **Computational Nuclear Engineering, Reactor Physics, and Scientific Computing**.
 
 - **Email:** [arashrezaii28@gmail.com](mailto:arashrezaii28@gmail.com)
 - **GitHub:** [github.com/Arashsyberbrother](https://github.com/Arashsyberbrother)
@@ -132,5 +143,5 @@ I am actively preparing applications for **Graduate Studies (M.Sc. / Ph.D.) and 
 <br/>
 
 <div align="center">
-  <sub><i>"The intersection of fundamental physical principles and high-throughput artificial intelligence is where the next technological breakthroughs emerge."</i></sub>
+  <sub><i>"Rigorous mathematical verification, transparent numerical analysis, and fundamental physics principles form the bedrock of predictive computational nuclear engineering."</i></sub>
 </div>
