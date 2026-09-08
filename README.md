@@ -1,120 +1,101 @@
 <div align="center">
 
-<!-- Custom Designed Banner -->
+<!-- Custom Academic Banner -->
 <img src="./assets/banner.png" width="100%" alt="Arash M.rezaii - Where Science Meets Code" />
-
-<!-- Dynamic Animated Typing Subtitle -->
-<a href="https://github.com/Arashsyberbrother">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&duration=2800&pause=1000&color=22D3EE&center=true&vCenter=true&width=780&lines=%3E_++Where+Science+Meets+Code;%3E_++Nuclear+Engineering+%C3%97+AI+%C3%97+Software+Development;%3E_++Real-Time+Computer+Vision+%26+Deep+Learning+Specialist;%3E_++YOLO11+%E2%80%A2+PyTorch+%E2%80%A2+OpenCV+%E2%80%A2+React+%E2%80%A2+TypeScript" alt="Typing SVG" />
-</a>
 
 <br/><br/>
 
-<!-- Status & Metric Badges -->
-[![Profile Views](https://komarev.com/ghpvc/?username=Arashsyberbrother&style=for-the-badge&color=0284c7&label=PROFILE+VIEWS)](https://github.com/Arashsyberbrother)
-[![GitHub Followers](https://img.shields.io/github/followers/Arashsyberbrother?style=for-the-badge&color=3b82f6&label=FOLLOWERS)](https://github.com/Arashsyberbrother)
-[![Discipline](https://img.shields.io/badge/SCIENCE%20%C3%97%20CODE-Nuclear%20%7C%20AI-9333ea?style=for-the-badge)](https://github.com/Arashsyberbrother)
-[![Email](https://img.shields.io/badge/CONTACT-arashrezaii28%40gmail.com-ef4444?style=for-the-badge&logo=gmail&logoColor=white)](mailto:arashrezaii28@gmail.com)
+# Arash Mohammadrezaei
+### **Undergraduate Researcher in Computer Vision & Deep Learning**
+**B.Sc. in Nuclear Engineering** • *Where Science Meets Computational Intelligence*
+
+[![Status: Seeking RA / Graduate Opportunities](https://img.shields.io/badge/Status-Seeking%20RA%20%2F%20Graduate%20Opportunities-0ea5e9?style=for-the-badge&logo=googlescholar&logoColor=white)](mailto:arashrezaii28@gmail.com)
+[![Email](https://img.shields.io/badge/Direct%20Email-arashrezaii28%40gmail.com-ea4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:arashrezaii28@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Arash%20Mohammadrezaei-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com)
+[![Curriculum Vitae](https://img.shields.io/badge/Curriculum%20Vitae-Download%20CV-10b981?style=for-the-badge&logo=adobeacrobatreader&logoColor=white)](mailto:arashrezaii28@gmail.com)
 
 </div>
 
 ---
 
-### 📡 Vision Architecture & Engineering Pipeline
+## 🔬 Academic Summary & Research Interests
+
+I am an engineering researcher working at the intersection of **Physics/Nuclear Engineering principles** and **Applied Artificial Intelligence**. My primary focus centers on high-throughput, low-latency deep learning pipelines, real-time computer vision systems, and scientific machine learning (SciML).
+
+My technical work spans the complete lifecycle of computer vision systems: from custom dataset curation and neural network fine-tuning (YOLO11, custom CNNs, OCR engines) to low-latency edge deployment (TensorRT, ONNX, CUDA) and interactive real-time mission-control interfaces.
+
+### Core Research Areas
+- **Real-Time Computer Vision & Object Tracking:** Multi-stage object detection, vehicle localization, character segmentation, and DeepSORT/ByteTrack multi-object tracking.
+- **Edge AI & High-Throughput Inference:** Model quantization (INT8/FP16), TensorRT acceleration, asynchronous inference pipelines, and memory-constrained deployment on NVIDIA Jetson/RTX hardware.
+- **Optical Character Recognition (OCR) for Non-Latin Scripts:** Specialized segmentation, character classification, and heuristic plausibility filtering for Persian/Arabic typography.
+- **Scientific Computing & Physics-Informed ML:** Applying neural architectures and numerical simulation methods to physical and nuclear engineering systems.
+
+---
+
+## 🏆 Featured Research Projects & Benchmarks
+
+### 1. [Persian ALPR & Real-Time Vehicle Surveillance Pipeline](https://github.com/Arashsyberbrother/yolo11-persian-license-plate-recognition)
+*End-to-End Automated License Plate Recognition & Telemetry System with Multi-Threaded Inference*
+
+- **Problem:** Accurate, real-time license plate detection and non-Latin character recognition under challenging illumination, severe viewing angles, and high-speed motion blur.
+- **Methodology:** A hierarchical two-stage pipeline combining vehicle localization (YOLO11n), plate detection, morphological deskewing (Hough Transform), and hybrid character classification with EasyOCR fallback bridges.
+- **My Contributions:** Architected the multi-threaded PySide6 analytics engine (`desktop_ui.py`), implemented OCR string plausibility filtering to eliminate false positives, built automated artifact logging, and conducted hardware latency benchmarks.
+
+#### Quantitative Experimental Benchmark
+
+| Pipeline Stage | Model Architecture | Input Resolution | Metric | RTX 3060 (FP16) | Jetson / Edge (Est.) | CPU (i7-12th) |
+| :--- | :--- | :---: | :---: | :---: | :---: | :---: |
+| **Vehicle & Plate Detection** | YOLO11n (Fine-tuned) | 640 × 640 | **mAP@0.5: 97.4%** | **8.4 ms** (~119 FPS) | **28.2 ms** (~35 FPS) | **42.1 ms** |
+| **Plate Deskewing & Seg.** | OpenCV Hough / Morph | Variable | **Success: 96.1%** | **2.1 ms** | **6.4 ms** | **4.8 ms** |
+| **Character Classification** | Custom CNN / Hybrid | 32 × 32 (x8) | **Acc: 98.6% (CER: 1.1%)** | **3.7 ms** | **11.2 ms** | **12.5 ms** |
+| **End-to-End Pipeline** | **Complete System** | **1080p Video** | **Overall Acc: 95.8%** | **14.2 ms (~70 FPS)** | **45.8 ms (~22 FPS)** | **59.4 ms** |
+
+---
+
+### 2. [Edge Vision Mission Control & Geospatial Surveillance SOC](https://github.com/Arashsyberbrother/-arash)
+*Real-Time Security Operations Center with Live Multi-Feed Processing & GIS Tracking*
+
+- **Problem:** Managing asynchronous telemetry, high-framerate multi-camera video decoding, and spatial incident tracking without UI rendering bottlenecks.
+- **Architecture:** Engineered with **React 18, TypeScript, and Vite**, featuring non-blocking WebSocket state sync, GIS coordinate mapping, and automated alert dispatching.
+- **Capabilities:** Live camera matrix view, geospatial vehicle track visualization, bounding-box overlay rendering, and forensic event loggers.
+
+---
+
+### 3. [DeepFace Biometric Recognition & Facial Feature Analysis](https://github.com/Arashsyberbrother/deepface-react-ui)
+*Lightweight Face Detection & Biometric Embeddings for Edge Security*
+
+- Integration of state-of-the-art face detectors (LFFD / RetinaFace) with facial representation embeddings (VGG-Face, ArcFace, Facenet) for identity verification under variable lighting conditions.
+- Interactive user interface for enrollment, similarity threshold tuning, and real-time biometric telemetry.
+
+---
+
+## 🛠️ Technical Competencies & Tooling
 
 ```
-  ┌──────────────────┐      ┌─────────────────────────┐      ┌────────────────────────┐
-  │  CAMERA STREAMS  │ ───► │  NEURAL DETECTOR CORE   │ ───► │  EDGE INFERENCE ENGINE │
-  │  RTSP / IP Feeds │      │  YOLO11 / DeepSORT      │      │  PyTorch / ONNX / TRT  │
-  └──────────────────┘      └────────────┬────────────┘      └───────────┬────────────┘
-                                         │                               │
-                                         ▼                               ▼
-  ┌───────────────────────────────────────────────────────────────────────────────────┐
-  │              REAL-TIME MISSION DASHBOARD (React + Vite + TypeScript)               │
-  │     • GIS Vehicle Tracking    • Biometric Face Feeds    • Instant Threat Alerts   │
-  └───────────────────────────────────────────────────────────────────────────────────┘
+  ┌────────────────────────────────────────────────────────────────────────────────────────┐
+  │                                    RESEARCH ARSENAL                                    │
+  ├──────────────────────┬──────────────────────────┬──────────────────────────────────────┤
+  │ DEEP LEARNING & CV   │ SCIENTIFIC COMPUTING     │ SYSTEMS, EDGE & FULL-STACK           │
+  ├──────────────────────┼──────────────────────────┼──────────────────────────────────────┤
+  │ • PyTorch / Torchvis │ • NumPy & SciPy          │ • Linux / Bash & Shell Scripting     │
+  │ • Ultralytics YOLO11 │ • Matplotlib & Seaborn   │ • Docker Containerization            │
+  │ • OpenCV 4.x         │ • Pandas Data Analytics  │ • Git & Version Control Best Practices│
+  │ • TensorRT / ONNX    │ • LaTeX Academic Writing │ • TypeScript, React 18, Vite         │
+  │ • DeepFace & LFFD    │ • Weights & Biases (WandB│ • REST APIs, WebSockets, WebRTC      │
+  └──────────────────────┴──────────────────────────┴──────────────────────────────────────┘
 ```
 
 ---
 
-### 👨‍💻 Engineering Profile & Vision
+## 🎓 Academic Background
 
-> **"WHERE SCIENCE MEETS CODE"**  
-> Intersecting the rigorous principles of **Nuclear Engineering** with modern **Artificial Intelligence** and **High-Performance Software Development**.
-
-I build intelligent, production-grade vision pipelines and scientific computing workflows. My technical focus bridges deep neural networks for real-time detection, tracking, and optical character recognition (OCR) with responsive mission-critical dashboards.
-
-- ⚛️ **Scientific Foundation:** Nuclear Engineering analytical thinking applied to complex algorithmic modeling and simulation.
-- 🔭 **Active Work:** High-precision Persian License Plate Recognition (ALPR/ANPR) & Multi-Camera Vehicle Tracking.
-- 🧠 **Core Models:** Ultralytics YOLO11 / YOLOv8, Face Verification (DeepFace/LFFD), OpenCV pipelines, and custom CNNs.
-- ⚡ **Inference & Optimization:** CUDA acceleration, TensorRT, ONNX Runtime, and edge-device deployments.
-- 🌐 **Dashboard Engineering:** Designing high-throughput real-time interfaces using **React 18, Vite, TypeScript, and TailwindCSS**.
+- **B.Sc. in Nuclear Engineering**
+  - Strong analytical foundation in advanced engineering mathematics, partial differential equations (PDEs), numerical methods, statistical physics, and radiation measurement.
+  - Applying analytical rigor and scientific problem-solving methods to modern machine learning challenges.
 
 ---
 
-### 🛠️ Tech Stack & Tooling Ecosystem
-
-<div align="center">
-
-#### 🧠 Computer Vision, Deep Learning & AI
-<p>
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
-  <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" alt="PyTorch" />
-  <img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white" alt="OpenCV" />
-  <img src="https://img.shields.io/badge/YOLO11-00F0FF?style=for-the-badge&logo=ultralytics&logoColor=black" alt="YOLO11" />
-  <img src="https://img.shields.io/badge/DeepFace-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white" alt="DeepFace" />
-  <img src="https://img.shields.io/badge/Scikit--Learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white" alt="Scikit-Learn" />
-  <img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white" alt="NumPy" />
-</p>
-
-#### 🖥️ Full-Stack & Operations Dashboards
-<p>
-  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
-  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" />
-  <img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" alt="Vite" />
-  <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white" alt="Node.js" />
-  <img src="https://img.shields.io/badge/TailwindCSS-06B6D4?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="TailwindCSS" />
-</p>
-
-#### ⚙️ Platforms, DevOps & Tooling
-<p>
-  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
-  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
-  <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux" />
-  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker" />
-  <img src="https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white" alt="VS Code" />
-</p>
-
-</div>
-
----
-
-### 🚀 Featured Engineering Projects
-
-| Project | Highlights & Capabilities | Architecture | Status |
-| :--- | :--- | :--- | :---: |
-| 🚗 **[Smart Persian ALPR](https://github.com/Arashsyberbrother/smart-license-plate-recognition)** | Intelligent License Plate Recognition system built specifically for Iranian vehicles. Features plate localization, character segmentation, and high-accuracy OCR. | `Python` `OpenCV` `YOLO` `Deep Learning` | ![Production](https://img.shields.io/badge/Status-Active-22c55e?style=flat-square) |
-| ⚡ **[YOLO11 Vehicle ALPR](https://github.com/Arashsyberbrother/yolo11-persian-license-plate-recognition)** | Ultra-fast vehicle detection and plate recognition pipeline leveraging Ultralytics YOLO11 architecture for superior inference speed. | `YOLO11` `PyTorch` `Computer Vision` | ![Research](https://img.shields.io/badge/Status-Benchmark-0ea5e9?style=flat-square) |
-| 🛡️ **[AI Surveillance SOC Dashboard](https://github.com/Arashsyberbrother/-arash)** | Next-generation Security Operations Center UI. Features real-time multi-stream live camera feeds, GIS geospatial vehicle tracking, and automated security event feeds. | `React 18` `TypeScript` `Vite` `Tailwind` | ![Completed](https://img.shields.io/badge/Status-Ready-a855f7?style=flat-square) |
-
----
-
-### 🔬 Development & Edge AI Lab Specs
-
-<details>
-<summary><b>🔍 Click to view Hardware & Runtime Specifications</b></summary>
-<br/>
-
-- **Primary Stack:** Python 3.10+, PyTorch 2.x, CUDA 12.x, cuDNN
-- **Vision Engines:** Ultralytics YOLO11 / YOLOv8, OpenCV 4.x, DeepFace
-- **Deployment Targets:** Linux (Ubuntu LTS), Windows Server, Docker Containers, Edge Systems
-- **Frontend Architecture:** React 18, TypeScript, TailwindCSS, WebSocket / WebRTC Streaming
-
-</details>
-
----
-
-### 📊 GitHub Activity & Real-Time Stats
+## 📈 Research & GitHub Activity
 
 <div align="center">
 
@@ -128,7 +109,7 @@ I build intelligent, production-grade vision pipelines and scientific computing 
 
 <br/><br/>
 
-#### 🐍 Activity Contribution Snake
+#### Continuous Activity Grid (Automated Pipeline)
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Arashsyberbrother/Arashsyberbrother/output/github-contribution-grid-snake-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Arashsyberbrother/Arashsyberbrother/output/github-contribution-grid-snake.svg">
@@ -139,24 +120,17 @@ I build intelligent, production-grade vision pipelines and scientific computing 
 
 ---
 
-### 🤝 Connect & Collaborate
+## 📬 Academic & Professional Inquiries
+
+I am actively preparing applications for **Graduate Studies (M.Sc. / Ph.D.) and Research Assistantship (RA) opportunities** in Computer Vision, Deep Learning, and Intelligent Systems.
+
+- **Email:** [arashrezaii28@gmail.com](mailto:arashrezaii28@gmail.com)
+- **GitHub:** [github.com/Arashsyberbrother](https://github.com/Arashsyberbrother)
+- **LinkedIn:** [Arash Mohammadrezaei](https://linkedin.com)
+- **Location:** Tehran, Iran (Open to Global Relocation)
+
+<br/>
 
 <div align="center">
-
-<a href="mailto:arashrezaii28@gmail.com">
-  <img src="https://img.shields.io/badge/Email-Direct%20Inquiry-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
-</a>
-&nbsp;
-<a href="https://github.com/Arashsyberbrother">
-  <img src="https://img.shields.io/badge/GitHub-Follow%20Work-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
-</a>
-&nbsp;
-<a href="https://linkedin.com">
-  <img src="https://img.shields.io/badge/LinkedIn-Professional%20Network-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
-</a>
-
-<br/><br/>
-
-<sub>⚡ Crafted with technical rigor for <b>Arash Mohammad Rezaei</b></sub>
-
+  <sub><i>"The intersection of fundamental physical principles and high-throughput artificial intelligence is where the next technological breakthroughs emerge."</i></sub>
 </div>
